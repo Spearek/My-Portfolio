@@ -1,0 +1,133 @@
+@keyframes rocketLaunch {
+    0%{
+
+    }
+    10%{
+        transform: translateY(15px);
+    }
+    15%{
+        transform: translateY(-110px); 
+    }
+    25%{
+        transform: translateY(-110px) rotate(90deg); 
+    }
+    30%{
+        transform: translateX(-15px) translateY(-110px) rotate(90deg); 
+    }
+    40%{
+        transform: translateX(85px) translateY(-110px) rotate(90deg); 
+    }
+    50%{
+        transform: translateX(85px) translateY(-110px) rotate(45deg);
+    }
+ 
+    60%{
+        transform: translateX(700px) translateY(-600px) rotate(45deg);
+
+    }
+    62%{
+        transform: translateX(700px) translateY(-600px) rotate(180deg);
+
+    }
+    66%{
+        transform: translateX(700px) translateY(500px) rotate(180deg); 
+    }
+    67%{
+        transform: translateX(700px) translateY(500px) rotate(270deg); 
+    }
+    77%{
+        transform: translateX(-2000px) translateY(500px) rotate(270deg); 
+
+    }
+    78%{
+        transform: translateX(-2000px) translateY(250px) rotate(90deg);  
+    }
+    88%{
+        transform: translateX(0) translateY(250px) rotate(90deg);  
+    }
+    95%{
+        transform: translateX(0) translateY(250px) rotate(0);
+    }
+    100%{
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+
+    /*@keyframes rocketLaunch {
+    0%{
+
+    }
+    15%{
+        transform: translateY(15px);
+    }
+    30%{
+        transform: translateY(-110px); 
+    }
+    50%{
+        transform: translateY(-110px) rotate(90deg); 
+    }
+    60%{
+        transform: translateX(-15px) translateY(-110px) rotate(90deg); 
+    }
+    75%{
+        transform: translateX(85px) translateY(-110px) rotate(90deg); 
+    }
+    85%{
+        transform: translateX(85px) translateY(-110px) rotate(45deg);
+    }
+ 
+    100%{
+        transform: translateX(700px) translateY(-600px) rotate(45deg);
+
+    }*/
+
+
+   
+}
+body{
+    background: url(patterns/natural_paper.png);
+}
+.main_tiles{
+    height: 50vh;
+    min-height: 400px;
+
+    
+}
+.tile_1{
+    background: url(patterns/halftone-yellow.png);
+}
+.tile_2{
+    background: url(patterns/light_alu.png);
+}
+.tile_3{
+    background: url(patterns/dark_Tire.png);
+}
+.tile_4{
+    background: url(patterns/stardust.png);
+}
+
+.tile_1 div img{
+    height: 200px;
+}
+.tile_2 div img{
+    height: 100px;
+    margin-top:25vh;
+    animation-name: rocketLaunch;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-delay:0.5s;
+    /*animation-iteration-count: infinite;*/
+    animation-fill-mode: forwards;
+    
+}
+.tile_3 div img{
+    height: 200px;
+
+}
+.tile_4 div img{
+    height: 200px;
+
+}
+
+
+
+
