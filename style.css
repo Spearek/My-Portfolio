@@ -83,14 +83,37 @@
 
    
 }
+@keyframes shakeLaunch{
+    0%{
+
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 body{
     background: url(patterns/natural_paper.png);
 }
+.row{
+    margin-bottom:0;
+}
 .main_tiles{
     height: 50vh;
-    min-height: 400px;
-
-    
+    min-height: 400px;  
+}
+@media screen and (min-width:670px){
+    .main-tiles{
+        height: 100vh;
+    }
 }
 .tile_1{
     background: url(patterns/halftone-yellow.png);
@@ -104,30 +127,56 @@ body{
 .tile_4{
     background: url(patterns/grey_wash_wall.png);
 }
+.sidenav{
+    background: url(patterns/gaming-pattern.png);
+}
 
 .tile_1 div img{
-    height: 200px;
+    max-height: 200px;
 }
 .tile_2 div img{
-    height: 100px;
-    margin-top:25vh;
-    animation-name: rocketLaunch;
+   max-height: 90px;
+   margin-top:15vh;
+   /* animation-name: rocketLaunch;
     animation-duration: 7s;
     animation-timing-function: linear;
     animation-delay:0.5s;
+    /*animation-iteration-count: infinite;
+    animation-fill-mode: forwards;*/
+}
+.rocketAnimation{
+    animation-name: rocketLaunch;
+    animation-duration: 7s;
+    animation-timing-function: linear;
     /*animation-iteration-count: infinite;*/
     animation-fill-mode: forwards;
-    
+
 }
+.shakeAnimation{
+    animation-name: shakeLaunch;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;    
+}
+    
+
 .tile_3 div img{
-    height: 200px;
+ max-height: 200px;
 
 }
 .tile_4 div img{
-    height: 200px;
+    max-height: 250px;
 
 }
+.animated_border{
+    padding-bottom: 5px;
+}
 
+.letterMove{
+    transform: translateX(500px);
+}
+.letterImageTag{
+    transition: all 1s ease-in;
 
-
-
+}
