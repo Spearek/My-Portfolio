@@ -107,8 +107,9 @@ body{
     margin-bottom:0;
 }
 .main_tiles{
+    min-height: 400px;
     height: 50vh;
-    min-height: 400px;  
+      
 }
 @media screen and (min-width:670px){
     .main-tiles{
@@ -133,6 +134,7 @@ body{
 
 .tile_1 div img{
     max-height: 200px;
+    padding-bottom:20px;
 }
 .tile_2 div img{
    max-height: 90px;
