@@ -176,7 +176,7 @@ body{
 }
 
 .letterMove{
-    transform: translateX(500px);
+    transform: translateX(50vw);
 }
 .letterImageTag{
     transition: all 1s ease-in;
