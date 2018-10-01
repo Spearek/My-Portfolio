@@ -9,10 +9,51 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <link rel="stylesheet" href="about.css">
         <title>My Portfolio</title>
+
     
     </head>
 <body>
+
+    <div class="sidenav blue-grey lighten-5" id="mobile-menu">
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col s8 offset-s2">
+                        <img src="me.jpg" alt="" class="circle responsive-img">
+                    </div>
+                 </div>                    
+            </li>
+            <li>
+                <div class="row ">
+                    <div class="col s6 center-align fa-3x">
+                        <a href="https://github.com/Spearek" class="teal-text text-darken-1 "><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col s6 center-align fa-3x">
+                        <a href="https://www.facebook.com/mateusz.dzida.5" class="teal-text text-darken-1 "><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="col s6 center-align fa-3x">
+                        <a href="https://www.linkedin.com/in/mateusz-dzida-a6423815b" class="teal-text text-darken-1 "><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="col s6 center-align fa-3x">
+                        <a href="./resume.pdf"class="teal-text text-darken-1 "><i class="fas fa-business-time" ></i></a>
+                    </div>
+                </div>  
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About me..</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <section>
+    <a href="index.html" class="teal-text return-btn hide-on-small-only teal-text"><i class="material-icons left medium">keyboard_return</i></a>
+    
+    <div class="container section">
+         <a href="" class="sidenav-trigger navbar-fixed left hide-on-med-and-up teal-text text-accent-3 " data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+       </a>
+    </div>  
+
         <div class=" section center-align">
             <div class="row">
                 <div class="col s12 m6 l3">
@@ -63,9 +104,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
- $(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton(); 
- });
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.fixed-action-btn').floatingActionButton();
+      $('.tooltipped').tooltip();
+    });
 </script>
 
 </html>
