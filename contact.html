@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <title>My Portfolio</title>
+            <style>
+                body{
+                    background: url(patterns/grey_wash_wall.png);
+                }
+                .formContainer{
+                    background:url(form-bg.jpg);
+                    background-size: cover;
+                    opacity: 0.8;
+                }
+                .input-field label {
+                 color: #424242;
+                }
+                .input-field .prefix{
+                color: #212121;
+                }
+                .input-field .prefix.active {
+                color: #009688;
+                }
+                
+            </style>
+    
+    </head>
+<body>
+    <div class="container center grey-text text-lighten-5">
+        <h2>Get in Touch!</h2>
+
+        <div class="row section">
+            <div class="col s12 m8 offset-m2 formContainer">
+                    
+                <div class="lighten-2 section">
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix">person</i>
+                            <input type="text" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <i class="material-icons prefix">business</i>
+                                <input type="text" id="company">
+                                <label for="company">Company</label>
+
+                        </div>
+                    
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">Your email</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea name="" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    
+                        <div class="input-field">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>          
+        </div>
+  
+    </div>
+        
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.fixed-action-btn').floatingActionButton();
+      $('.tooltipped').tooltip();
+      
+      
+    });
+</script>
+
+</html>
