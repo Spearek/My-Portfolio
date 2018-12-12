@@ -24,3 +24,6 @@ body{
     margin-left: 10px;
     margin-top: 10px;
 }
+.sidenav{
+    background: url(patterns/congruent_pentagon.png);
+}
