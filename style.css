@@ -167,6 +167,9 @@ body{
  max-height: 200px;
 
 }
+.tile_4{
+    overflow: hidden;
+}
 .tile_4 div img{
     max-height: 250px;
 
