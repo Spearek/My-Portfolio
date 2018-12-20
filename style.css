@@ -174,6 +174,30 @@ body{
     max-height: 250px;
 
 }
+.tile_2,.tile_3,.tile_4{
+    position: relative;
+}
+.tile_2:hover,.tile_3:hover,.tile_4:hover{
+    opacity: 0.94;
+}
+.tile_2 img{
+    z-index: 3;
+}
+
+.tile_2 a,.tile_3 a,.tile_4 a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 2; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */  
+
+}
+
 .animated_border{
     padding-bottom: 5px;
 }
